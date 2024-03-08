@@ -32,7 +32,7 @@ SECRET_KEY = "django-insecure-=i80dz(hd*49ex*+#b=6)f_(l@g)ywlftm0p^5()gg5kvy)))i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://unapausa.onrender.com/',"unapausa.onrender.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -66,15 +66,15 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware"
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-#     "http://localhost",
-#     "http://localhost:8000",
-#     "http://127.0.0.1:8000"
-# ]
 CORS_ALLOWED_ORIGINS = [
-    "https://unapausa.onrender.com/"
+    "http://localhost:3000",
+    "http://localhost",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000"
 ]
+# CORS_ALLOWED_ORIGINS = [
+    
+# ]
 
 ROOT_URLCONF = "unapausa.urls"
 
