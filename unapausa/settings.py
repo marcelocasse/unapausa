@@ -30,9 +30,9 @@ MEDIA_URL = ""
 SECRET_KEY = "django-insecure-=i80dz(hd*49ex*+#b=6)f_(l@g)ywlftm0p^5()gg5kvy)))i"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["unapausa.pythonanywhere.com"]
 
 
 # Application definition
@@ -66,15 +66,10 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware"
 ]
 
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000"
+    "unapausa.pythonanywhere.com"
 ]
-# CORS_ALLOWED_ORIGINS = [
-    
-# ]
 
 ROOT_URLCONF = "unapausa.urls"
 
